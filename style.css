@@ -165,7 +165,7 @@ ul {
     z-index: -5;
     text-align: center;
     padding: 0px 0 0 0;
-    width: 40%;
+    width: 30%;
     animation-name: herofadein;
     animation-duration: 0.25s;
     -webkit-animation-name: herofadein;
@@ -503,7 +503,7 @@ footer p {
         z-index: -5;
         text-align: center;
         padding: 0px 0 0 0;
-        width: 40%;
+        width: 50%;
         animation-name: herofadein;
         animation-duration: 0.25s;
         -webkit-animation-name: herofadein;
@@ -841,7 +841,7 @@ footer p {
         z-index: -5;
         text-align: center;
         padding: 0px 0 0 0;
-        width: 40%;
+        width: 60%;
         animation-name: herofadein;
         animation-duration: 0.25s;
         -webkit-animation-name: herofadein;
@@ -1011,7 +1011,7 @@ footer p {
 @media (max-width: 750px) {
 
 
-    //* Type styles */
+    /* Type styles */
 
     body {
         font-family: 'Source Sans Pro', sans-serif;
@@ -1111,7 +1111,7 @@ footer p {
         position: fixed;
         top: 0px;
         width: 100%;
-        padding: 60px 50px 0px 50px;
+        padding: 20px 50px 0px 50px;
     }
 
     nav {

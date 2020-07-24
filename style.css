@@ -91,7 +91,8 @@ a:hover {
 }
 
 main {
-    padding: 200px;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Navigation */
@@ -168,7 +169,7 @@ ul {
     z-index: -5;
     text-align: center;
     padding: 0px 0 0 0;
-    width: 70%;
+    width: 40%;
     animation-name: herofadein;
     animation-duration: 0.25s;
     -webkit-animation-name: herofadein;
@@ -252,14 +253,9 @@ ul {
 /* Selected work */
 
 #select-works {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #fafaf8;
     z-index: 10;
     width: 100%;
-
     animation-name: herofadein;
     animation-duration: 0.5s;
     -webkit-animation-name: herofadein;
@@ -271,11 +267,10 @@ ul {
 }
 
 .projects{
-    padding-bottom: 100px;
+    margin: 1000px 0 100px 0;
     display: flex;
     column-gap: 100px;
     z-index: 100;
-    width: 100%;
 }
 
 .projects .projecttext{
@@ -329,6 +324,11 @@ footer {
     align-items: baseline;
 }
 
+.footer p {
+    margin-right: 150px;
+    text-align: right;
+}
+
 
 footer a,
 footer p {
@@ -355,15 +355,30 @@ footer p {
 
     .container {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     main {
         padding: 200px;
     }
 
+    .hero h1 {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        
+    }
 
+    .projects{
+        margin: 1000px 0 100px 0;
+        display: flex;
+        column-gap: 100px;
+        z-index: 100;
+        padding: 0px;
+    }
 }
 
 
@@ -380,8 +395,8 @@ footer p {
 
     .container {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     main {

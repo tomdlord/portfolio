@@ -193,6 +193,11 @@ ul {
 
 /* Casestudy */
 
+.casestudy {
+    padding-top: 200px;
+    width: 100%;
+}
+
 .container .textblock {
     padding: 100px 0 100px 0;
     margin: 0px;
@@ -207,7 +212,7 @@ ul {
 }
 
 .image-block img {
-    max-width: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -291,6 +296,19 @@ ul {
 .year{
     font-weight: lighter;
     opacity: 0.5;
+}
+
+.next-project {
+    height: 100px;
+    display: flex;
+    padding: 200px 0 200px 0;
+}
+
+.next-project img {
+    transform: rotate(-90deg);
+    padding: 50px 0 0 0;
+    margin: 0px;
+    align-items: baseline;
 }
 
 
@@ -419,7 +437,6 @@ footer p {
     /* Structure */
 
     .container {
-        width: 100%;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -757,7 +774,6 @@ footer p {
     /* Structure */
 
     .container {
-        width: 100%;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -1095,7 +1111,6 @@ footer p {
     /* Structure */
 
     .container {
-        width: 100%;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -1210,39 +1225,45 @@ footer p {
     .container .textblock {
         padding: 100px 0 100px 0;
         margin: 0px;
-        max-width: 60%;
+        max-width: 90%;
     }
 
     .container .image-block {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
         gap: 20px;
         object-fit: cover;
     }
 
     .image-block img {
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .credits {
         display: flex;
+        flex-direction: column;
         margin: 0px;
-        padding: 0px;
+        padding: 0px 0 40px 0;
     }
 
+    .credits h4,
     .credits h5 {
-        padding-right: 20px;
+        padding: 0 20px 0 0;
+        margin: 0px;
     }
 
     #agency, #role {
         display: flex;
         align-items: baseline;
+        padding: 0px;
+        margin: 0px;
     }
 
     #agency {
-        padding-right: 80px;
+        padding: 0 80px 0 0;
     }
 
 

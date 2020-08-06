@@ -11,7 +11,7 @@ body {
     color: #1a1a1a;
     margin: 0px;
     padding: 0px;
-    background: #DCDEDB;
+    background: #E5DED0;
     opacity: 1;
 }
 
@@ -91,7 +91,11 @@ a:hover {
     margin-right: 10%;
 }
 
-
+hr {
+    height: 1px;
+    background-color: white;
+    border: none;
+}
 
 /* Navigation */
 
@@ -196,7 +200,7 @@ ul {
 
 
 .content {
-    padding: 50px 0 0 0;
+    padding: 0px 0 0 0;
     margin: 0px;
     width: 100%;
 }
@@ -210,6 +214,7 @@ ul {
 }
 
 .about-intro {
+    padding: 100px 0 100px 0;
     width: 90%;
 }
 
@@ -318,6 +323,8 @@ li {
  
 .projects{
     display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
     column-gap: 5%;
     z-index: 100;
 }
@@ -327,7 +334,7 @@ li {
     justify-content: space-between;
     align-items: baseline;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .projecttext p {
@@ -336,7 +343,7 @@ li {
   
 .project-card{
     display: flexbox;
-    width: 100%;
+    max-width: 550px;
 }
   
 .projects img{
@@ -408,8 +415,22 @@ footer p {
 
 
 
-@media (max-width: 1440px) {
+@media (max-width: 750px) {
 
+    .nav-links {
+        display: none;
+    }
 
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+        column-gap: 48px;
+        margin: 0px;
+        padding: 80px 0 100px 0;
+    }
+
+    .content-grid div {
+        padding-top: 80px;
+    }
 
 }

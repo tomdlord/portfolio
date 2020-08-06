@@ -93,8 +93,9 @@ a:hover {
 
 hr {
     height: 1px;
-    background-color: white;
+    background-color: #1a1a1a;
     border: none;
+    width: 30px;
 }
 
 /* Navigation */

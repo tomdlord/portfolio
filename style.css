@@ -11,17 +11,17 @@ body {
     color: #1a1a1a;
     margin: 0px;
     padding: 0px;
-    background: #fafaf8;
+    background: #DCDEDB;
     opacity: 1;
 }
 
 h1 {
     font-family: 'Darker Grotesque', serif;
-    font-size: 54px;
+    font-size: 60px;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.1;
     text-align: left;
-    color: #1a1a1a;
+    color: #E0D5C8;
     opacity: 1;
 }
 
@@ -38,13 +38,13 @@ h2 {
 
 h3 {
     font-family: 'Darker Grotesque', serif;
-    font-size: 24px;
+    font-size: 54px;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: 0px;
     text-align: left;
     color: #1a1a1a;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 h4 {
@@ -60,10 +60,11 @@ h4 {
 
 h5 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1;
     text-align: left;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: #1a1a1a;
     opacity: 0.8;
@@ -84,23 +85,27 @@ a:hover {
 
 /* Structure */
 
-.container {
+.container, hr {
     max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
 
 
 /* Navigation */
 
 header {
-    position: fixed;
-    top: 0px;
+    /*
+    position: fixed;*/
+    padding-top: 3%;
     width: 100%;
-    padding: 20px 50px 0px 50px;
+    margin: 0px;
 }
 
 nav {
+    width: 100%;
+    margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -116,7 +121,7 @@ ul {
 }
 
 .nav-links {
-    transform: translateX(-40%);
+    padding-right: 5%;
 }
 
 .nav-links li {
@@ -128,7 +133,6 @@ ul {
     line-height: 1.8;
     color: #1a1a1a;
     margin: 0px;
-    padding: 0px;
     opacity: 1;
     display: inline-block;
     align-items: baseline;
@@ -152,20 +156,17 @@ ul {
 /* Hero */
 
 .hero {
-    padding: 240px 0 120px 0;
+    padding: 0px 0 120px 0;
 }
 
 .hero h1 {
+    /*
     position: fixed;
     top: 40%;
     left: 50%;
-    transform: translateX(-50%);
-    margin-left: auto;
-    margin-right: auto;
+    transform: translateX(-50%);*/
     z-index: -5;
-    text-align: center;
     padding: 0px;
-    width: 60%;
     animation-name: herofadein;
     animation-duration: 0.25s;
     -webkit-animation-name: herofadein;
@@ -190,6 +191,60 @@ ul {
     100% {opacity: 100%;}
 }
 
+
+/* Text */
+
+
+.content {
+    padding: 50px 0 0 0;
+    margin: 0px;
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 48px;
+    margin: 0px;
+    padding: 80px 0 100px 0;
+}
+
+.about-intro {
+    width: 90%;
+}
+
+#capabilites {
+    grid-column: 1 / 4;
+}
+
+#clients {
+    grid-column: 4 / 7;
+}
+
+#education {
+    grid-column: 7 / 9;
+}
+
+#experience {
+    grid-column: 10 / 13;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    font-family: 'Darker Grotesque', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 1;
+}
 
 /* Casestudy */
 
@@ -248,9 +303,8 @@ ul {
 /* Selected work */
 
 #select-works {
-    background-color: #fafaf8;
     z-index: 10;
-    width: 100%;
+    width: 70%;
     animation-name: herofadein;
     animation-duration: 0.5s;
     -webkit-animation-name: herofadein;
@@ -258,15 +312,13 @@ ul {
 }
 
 #summit {
-    padding-top: 50px;
 }
 
 
  
 .projects{
-    margin: 1000px 20% 0px 20%;
     display: flex;
-    column-gap: 10%;
+    column-gap: 5%;
     z-index: 100;
 }
 
@@ -322,7 +374,7 @@ ul {
 
 footer {
     width: 100%;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 10%x 0px 10%;
     
 }
 
@@ -333,7 +385,7 @@ footer {
 }
 
 .footer p {
-    margin-right: 150px;
+    margin-right: 0px;
     text-align: right;
 }
 
@@ -359,1012 +411,5 @@ footer p {
 @media (max-width: 1440px) {
 
 
-    /* Type styles */
 
-    body {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        background: #fafaf8;
-        opacity: 1;
-    }
-
-    h1 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 54px;
-        font-weight: 300;
-        line-height: 1.2;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h2 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h3 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h4 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 0.6;
-    }
-
-    h5 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1;
-        text-align: left;
-        letter-spacing: 1px;
-        color: #1a1a1a;
-        opacity: 0.8;
-    }
-
-    a {
-        text-align: left;
-        text-decoration: none;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-    }
-
-    a:hover {
-        color: gray;
-    }
-
-    /* Structure */
-
-    .container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    main {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    /* Navigation */
-
-    header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        padding: 60px 50px 0px 50px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    header a {
-        color: #1a1a1a;
-    }
-
-    ul {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .nav-links {
-        transform: translateX(-40%);
-    }
-
-    .nav-links li {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 16px;
-        text-align: right;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-        display: inline-block;
-        align-items: baseline;
-        padding-left: 40px;
-        
-    }
-
-    .nav-links a{
-        text-decoration: none;
-    }
-
-    .logo {
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        
-    }
-
-
-
-    /* Hero */
-
-    .hero {
-        padding: 240px 0 120px;
-    }
-
-    .hero h1 {
-        position: fixed;
-        top: 40%;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: auto;
-        margin-right: auto;
-        z-index: -5;
-        text-align: center;
-        padding: 0px 0 0 0;
-        width: 50%;
-        animation-name: herofadein;
-        animation-duration: 0.25s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 0.5s;
-    }
-
-    .hero h3 {
-        text-align: center;
-        margin: auto;
-    }
-
-    
-    @keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-    @-webkit-keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-
-    /* Casestudy */
-
-    .container .textblock {
-        padding: 100px 0 100px 0;
-        margin: 0px;
-        max-width: 60%;
-    }
-
-    .container .image-block {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        object-fit: cover;
-    }
-
-    .image-block img {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .credits {
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .credits h5 {
-        padding-right: 20px;
-    }
-
-    #agency, #role {
-        display: flex;
-        align-items: baseline;
-    }
-
-    #agency {
-        padding-right: 80px;
-    }
-
-
-    #hero-img {
-        max-width: 100%;
-    }
-
-    /* Selected work */
-
-    #select-works {
-        background-color: #fafaf8;
-        z-index: 10;
-        animation-name: herofadein;
-        animation-duration: 0.5s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 1s;
-    }
-
-    #summit {
-        padding-top: 100px;
-    }
-
-
-    .projects{
-        margin: 1000px 10% 100px 10%;
-        display: flex;
-        column-gap: 100px;
-        z-index: 100;
-    }
-
-    .projects .projecttext{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-
-    .projecttext p {
-        color: #797979;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .project-card{
-        display: flexbox;
-        width: 100%;
-    }
-    
-    .projects img{
-        display: block;
-        object-fit: contain;
-        width: 100%;
-    }
-    
-    .projecttext h4, 
-    .projecttext h3{
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .year{
-        font-weight: lighter;
-        opacity: 0.5;
-    }
-
-
-    /* Footer */
-
-    footer {
-        width: 100%;
-        padding: 0px 100px 20px 100px;
-        
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    .footer p {
-        margin-right: 150px;
-        text-align: right;
-    }
-
-
-    footer a,
-    footer p {
-        color: #1A1A1A;
-        font-size: small;
-        padding-right: 20px;
-        opacity: 0.6;
-    }
-}
-
-
-
-
-
-
-
-
-@media (max-width: 1000px) {
-
-
-    /* Type styles */
-
-    body {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        background: #fafaf8;
-        opacity: 1;
-    }
-
-    h1 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 54px;
-        font-weight: 300;
-        line-height: 1.2;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h2 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h3 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h4 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 0.6;
-    }
-
-    h5 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1;
-        text-align: left;
-        letter-spacing: 1px;
-        color: #1a1a1a;
-        opacity: 0.8;
-    }
-
-    a {
-        text-align: left;
-        text-decoration: none;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-    }
-
-    a:hover {
-        color: gray;
-    }
-
-    /* Structure */
-
-    .container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    main {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    /* Navigation */
-
-    header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        padding: 60px 50px 0px 50px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    header a {
-        color: #1a1a1a;
-    }
-
-    ul {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .nav-links {
-        transform: translateX(-40%);
-    }
-
-    .nav-links li {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 16px;
-        text-align: right;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-        display: inline-block;
-        align-items: baseline;
-        padding-left: 40px;
-        
-    }
-
-    .nav-links a{
-        text-decoration: none;
-    }
-
-    .logo {
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        
-    }
-
-
-
-    /* Hero */
-
-    .hero {
-        padding: 240px 0 120px;
-    }
-
-    .hero h1 {
-        position: fixed;
-        top: 40%;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: auto;
-        margin-right: auto;
-        z-index: -5;
-        text-align: center;
-        padding: 0px 0 0 0;
-        width: 60%;
-        animation-name: herofadein;
-        animation-duration: 0.25s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 0.5s;
-    }
-
-    .hero h3 {
-        text-align: center;
-        margin: auto;
-    }
-
-    
-    @keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-    @-webkit-keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-
-    /* Casestudy */
-
-    .container .textblock {
-        padding: 100px 0 100px 0;
-        margin: 0px;
-        max-width: 60%;
-    }
-
-    .container .image-block {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        object-fit: cover;
-    }
-
-    .image-block img {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .credits {
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .credits h5 {
-        padding-right: 20px;
-    }
-
-    #agency, #role {
-        display: flex;
-        align-items: baseline;
-    }
-
-    #agency {
-        padding-right: 80px;
-    }
-
-
-    #hero-img {
-        max-width: 100%;
-    }
-
-    /* Selected work */
-
-    #select-works {
-        background-color: #fafaf8;
-        z-index: 10;
-        animation-name: herofadein;
-        animation-duration: 0.5s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 1s;
-    }
-
-    #summit {
-        padding-top: 100px;
-    }
-
-    .projects{
-        margin: 1000px 10% 50px 10%;
-        display: flex;
-        column-gap: 100px;
-        z-index: 100;
-    }
-
-    .projects .projecttext{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-
-    .projecttext p {
-        color: #797979;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .project-card{
-        display: flexbox;
-        width: 100%;
-    }
-    
-    .projects img{
-        display: block;
-        object-fit: contain;
-        width: 100%;
-    }
-    
-    .projecttext h4, 
-    .projecttext h3{
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .year{
-        font-weight: lighter;
-        opacity: 0.5;
-    }
-
-
-    /* Footer */
-
-    footer {
-        
-        width: 100%;
-        padding: 0px 100px 20px 100px;
-        
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    .footer p {
-        margin-right: 150px;
-        text-align: right;
-    }
-
-
-    footer a,
-    footer p {
-        color: #1A1A1A;
-        font-size: small;
-        padding-right: 20px;
-        opacity: 0.6;
-    }
-}
-
-
-
-
-
-
-
-@media (max-width: 750px) {
-
-
-    /* Type styles */
-
-    body {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        background: #fafaf8;
-        opacity: 1;
-    }
-
-    h1 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 1.2;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h2 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h3 {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 1;
-    }
-
-    h4 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #1a1a1a;
-        opacity: 0.6;
-    }
-
-    h5 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1;
-        text-align: left;
-        letter-spacing: 1px;
-        color: #1a1a1a;
-        opacity: 0.8;
-    }
-
-    a {
-        text-align: left;
-        text-decoration: none;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-    }
-
-    a:hover {
-        color: gray;
-    }
-
-    /* Structure */
-
-    .container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    main {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    /* Navigation */
-
-    header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        padding: 20px 50px 0px 50px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    header a {
-        color: #1a1a1a;
-    }
-
-    ul {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .nav-links {
-        transform: translateX(-40%);
-    }
-
-    .nav-links li {
-        font-family: 'Darker Grotesque', serif;
-        font-size: 16px;
-        text-align: right;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 1.8;
-        color: #1a1a1a;
-        margin: 0px;
-        padding: 0px;
-        opacity: 1;
-        display: inline-block;
-        align-items: baseline;
-        padding-left: 40px;
-        
-    }
-
-    .nav-links a{
-        text-decoration: none;
-    }
-
-    .logo {
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        
-    }
-
-
-
-    /* Hero */
-
-    .hero {
-        padding: 240px 0 120px;
-    }
-
-    .hero h1 {
-        position: fixed;
-        top: 20%;
-        left: 10%;
-        transform: translateX(-10%);
-        margin-left: 10%;
-        margin-right: 10%;
-        z-index: -5;
-        text-align: left;
-        padding: 0px 0 0 0;
-        width: 80%;
-        animation-name: herofadein;
-        animation-duration: 0.25s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 0.5s;
-    }
-
-    .hero h3 {
-        text-align: center;
-        margin: auto;
-    }
-
-    
-    @keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-    @-webkit-keyframes herofadein{
-        0% {opacity: 0%;}
-        80% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-
-
-    /* Casestudy */
-
-    .container .textblock {
-        padding: 100px 0 100px 0;
-        margin: 0px;
-        max-width: 90%;
-    }
-
-    .container .image-block {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        gap: 20px;
-        object-fit: cover;
-    }
-
-    .image-block img {
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .credits {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 0px 0 40px 0;
-    }
-
-    .credits h4,
-    .credits h5 {
-        padding: 0 20px 0 0;
-        margin: 0px;
-    }
-
-    #agency, #role {
-        display: flex;
-        align-items: baseline;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    #agency {
-        padding: 0 80px 0 0;
-    }
-
-
-    #hero-img {
-        max-width: 100%;
-    }
-
-    /* Selected work */
-
-    #select-works {
-        background-color: #fafaf8;
-        z-index: 10;
-        animation-name: herofadein;
-        animation-duration: 0.5s;
-        -webkit-animation-name: herofadein;
-        -webkit-animation-duration: 1s;
-    }
-
-    #summit {
-        padding-top: 0px;
-    }
-
-    .projects{
-        margin: 800px 10% 100px 10%;
-        display: flex;
-        flex-direction: column;
-        column-gap: 50px;
-        z-index: 100;
-    }
-
-    .projects .projecttext{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-top: 0px;
-        padding-bottom: 40px;
-    }
-
-    .projecttext p {
-        color: #797979;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .project-card{
-        display: flexbox;
-        width: 100%;
-        padding-top: 50px;
-    }
-    
-    .projects img{
-        display: block;
-        object-fit: contain;
-        width: 100%;
-    }
-    
-    .projecttext h4, 
-    .projecttext h3{
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .year{
-        font-weight: lighter;
-        opacity: 0.5;
-    }
-
-
-    /* Footer */
-
-    footer {
-        width: 100%;
-        padding: 0px 10% 20px 10%;
-        
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    .footer p {
-        margin-right: 100px;
-        text-align: right;
-    }
-
-
-    footer a,
-    footer p {
-        color: #1A1A1A;
-        font-size: small;
-        padding-right: 0px;
-        opacity: 0.6;
-    }
 }
